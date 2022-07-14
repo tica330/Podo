@@ -1,0 +1,274 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+ul, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #545454;
+}
+
+
+#wrap {
+    width: 100%;
+}
+
+
+/* header */
+header {
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+
+/* nav */
+#nav {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    position: fixed;
+    background-color: #fff;
+    z-index: 999;
+    overflow: hidden;
+    transition: height 0.4s;
+}
+.logo {
+    height: 100px;
+    line-height: 120px;
+    margin-left: 50px;
+    float: left;
+}
+.nav_mn {
+    position: absolute;
+    float: left;
+    width: 700px;
+    height: 100px;
+    margin-left: 250px;
+    line-height: 100px;
+}
+.nav_mn li {
+    float: left;
+    font-size: 24px;
+    width: 120px;
+    text-align: center;
+    position: relative;
+}
+.nav_mn li a {
+    display: block;
+}
+.nav_mn li a:hover {
+    font-weight: 800;
+    transition: 0.3s;
+}
+.nav_mn li:nth-child(5) {
+    width: 220px;
+}
+.nav_mn li> input {
+    border: none;
+    height: 40px;
+    width: 200px;
+    padding: 0 10px 0 10px;
+    font-size: 24px;
+    border-bottom: 2px solid #000;
+}
+.sub {
+    background-color: #fff;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+}
+.sub li {
+    height: 50px;
+    line-height: 50px;
+}
+.sub li a {
+    font-size: 18px;
+    display: block;
+}
+
+
+/* login */
+.log {
+    float: right;
+    width: 200px;
+    height: 100px;
+}
+.log li {
+    float: left;
+    width: 100px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 100px;
+}
+.log a {
+    display: block;
+}
+.log li a:hover {
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+
+/* section */
+section {
+    width: 100%;
+    background-color: #f7f4ed;
+}
+#title {
+    width: 100%;
+    position: relative;
+    height: 200px;
+    text-align-last: center;
+    line-height: 200px;
+    box-sizing: border-box;
+}
+#title p {
+    font-size: 35px;
+}
+
+
+/* wine */
+#wine {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.wine_list {
+    position: relative;
+    width: 100%;
+    padding: 0 100px 100px 100px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.wine_list li {
+    display: inline-block;
+    width: 250px;
+    background: #f7f4ed;
+    margin: 20px 10px 50px 10px;
+    padding-bottom: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+.wine_list li img {
+    width: 100px;
+    margin: 30px;
+}
+.origin {
+    color: rgb(117, 117, 117);
+}
+.wine_list li p {
+    margin-bottom: 5px;
+}
+.wine_list li:hover {
+    background-color: #fff;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+
+/* soldout */
+.soldout:hover {
+    filter: grayscale(100%);
+    filter: gray;
+    transition: 0.5s;
+}
+.sold {
+    position: absolute;
+    opacity: 0;
+    width: 250px;
+    height: 400px;
+    line-height: 400px;
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    text-shadow: 0px 0px 20px rgb(0, 0, 0);
+    transition: 0.5s;
+}
+.sold:hover {
+    opacity: 1;
+}
+
+
+/* footer */
+footer {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    background-image: url(../images/footer.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.info {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 50px;
+}
+.info p {
+    text-align: center;
+    font-size: 18px;
+}
+
+
+
+
+/* login */
+#login {
+    width: 100%;
+    height: 980px;
+    text-align: center;
+}
+.log_pg {
+    top: 30%;
+    position: relative;
+    width: 50%;
+}
+.log_pg p {
+    font-size: 35px;
+    text-align: center;
+    font-weight: 800;
+    padding: 0 0 50px 0;
+}
+.log_pg input {
+    position: relative;
+    width: 400px;
+    height: 40px;
+    margin:0 5px 10px 5px;
+    padding: 5px 39px 5px 11px;
+    border: solid 1px #dadada;
+    background: #fff;
+    box-sizing: border-box;
+    display: inline-block;
+}
+button {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 40px;
+    margin:0 5px 10px 5px;
+    width:400px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    background-color: #000;
+}
+.find {
+    margin-top: 30px;
+    color: #6c6c6c;
+}
+.find a {
+    font-size: 18px;
+    font-weight: 400;
+    color: #6c6c6c;
+}
+.find a:hover {
+    color: #000;
+    transition: 0.3s;
+}
