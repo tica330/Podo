@@ -117,89 +117,72 @@ header {
 
 
 /* slide */
-#slide {
-    width: 100%;
-    height: 600px;
+.slide {
+    display: flex;
+    flex-wrap: nowrap;
     overflow: hidden;
     position: relative;
-}
-.sl_img {
-    left: 0;
-    position: absolute;
     width: 100%;
-    transition: left 0.3s ease-in;
+    height: 600px;
 }
-.sl_img.animated {
-    transition: left 0.3s ease-in;
-}
-.sl_img li {
-    position: absolute;
-    width: 100%;
-}
-.sl_img li:nth-child(1) {
+.slide_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     left: 0;
+    width: 100%;
+    height: 600px;
+    flex-shrink: 0;
+    transition: left 0.5s;
 }
-.sl_img li:nth-child(2) {
-    left: 100%;
-}
-.sl_img li:nth-child(3) {
-    left: 200%;
-}
-.sl_img img {
+.slide_item img {
     width: 100%;
     height: 600px;
     object-fit: cover;
 }
 
-
-#pv_button {
-    width: 100%;
-    top: 300px;
+.slide_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
+    top: calc(50% - 16px);
     cursor: pointer;
 }
-#pv_button div:hover {
+
+.slide_prev_button {
+    left: 10px;
+}
+.slide_next_button {
+    right: 10px;
+}
+
+.slide_pagination {
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.slide_pagination > li {
+    cursor: pointer;
+}
+.slide_pagination > li.active {
     filter: invert(100%);
-    transition: 0.3s;
 }
-.prev {
-    width: 40px;
-    left: 50px;
-    position: absolute;
-    transition: 0.3s;
-}
-.next {
-    width: 40px;
-    right: 50px;
-    position: absolute;
-    transition: left 1s ease-in;
-}
-#slbt {
+
+.slide_item_duplicate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 0;
     width: 100%;
-    top: 550px;
-    position: absolute;
-    text-align: center;
-}
-.sl_button {
-    width: 100px;
-    display: inline-block;
-    text-align: center;
-}
-.sl_button li {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    float: left;
-}
-.sl_button li.on {
-    filter: invert(100%);
-}
-.sl_button li:last-child {
-    margin-right: 0;
-}
-.sl_button li img {
-    width: 20px;
-    height: 20px;
+    height: 300px;
+    flex-shrink: 0;
+    transition: left 0.15s;
 }
 
 
@@ -252,6 +235,9 @@ header {
     border-radius: 10px;
     transition: 0.5s;
 }
+
+
+/* soldout */
 .new_wine li:nth-child(2):hover {
     filter: grayscale(100%);
     filter: gray;
@@ -272,7 +258,6 @@ header {
     text-shadow: 0px 0px 20px rgb(0, 0, 0);
     transition: 0.5s;
 }
-
 
 
 /* section2 */
